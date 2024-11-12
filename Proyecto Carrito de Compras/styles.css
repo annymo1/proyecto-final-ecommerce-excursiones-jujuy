@@ -85,7 +85,7 @@ h1, h3, h2, p, h4 {
   flex-wrap: wrap;
   margin: 50px 0;
   justify-content: center;
- gap: 70px;
+ gap: 60px;
  
 }
 
@@ -142,7 +142,26 @@ border-radius: 40px;
 }
 
 .video {
-  margin-left: 7rem;
+  display: block;
+  width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+}
+
+iframe {
+  margin-left: 6rem;
+}
+
+
+.video_titulo h2 {
+    padding-bottom: 1rem;
+    color: #434742;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 2px solid #dd8623;
+    padding-bottom: 20px;
 }
 
 .formulario {
@@ -192,6 +211,10 @@ padding-bottom: 1rem;
   .opiniones {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.opiniones_todos h3 {
+    font-size: .9rem;
 }
 
 .opinion_uno {
