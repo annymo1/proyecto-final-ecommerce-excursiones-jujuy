@@ -105,39 +105,35 @@ width: 400px; height: 400px;
 border-radius: 40px;
 }
 
-.tour_uno p {
+.tours_todos p {
   color: #434742;
+ }
  
-}
-.uno_uno {
+
+.uno_uno .dos_dos .tres_tres .cuatro_cuatro .cinco_cinco .seis_seis {
   transition: all .3s;
 }
-  
+
 .uno_uno:hover {
   filter: opacity(0.4);
-}
-
-.tour_dos p {
- color: #434742;
-}
-
-.dos_dos {
-  transition: all .3s;
 }
 
 .dos_dos:hover {
   filter: opacity(0.4);
 }
 
-.tour_tres p {
-  color: #434742;
-}
-
-.tres_tres {
-  transition: all .3s;
-}
-
 .tres_tres:hover {
+  filter: opacity(0.4);
+}
+.cuatro_cuatro:hover {
+  filter: opacity(0.4);
+}
+
+.cinco_cinco:hover {
+  filter: opacity(0.4);
+}
+
+.seis_seis:hover{
   filter: opacity(0.4);
 }
 
