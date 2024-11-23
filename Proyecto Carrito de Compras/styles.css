@@ -107,7 +107,12 @@ border-radius: 40px;
 
 .tours_todos p {
   color: #434742;
- }
+}
+
+.tour_texto {
+  overflow: hidden;
+  width: 325px;
+}
  
 .uno_uno .dos_dos .tres_tres .cuatro_cuatro .cinco_cinco .seis_seis {
   transition: all .3s;
