@@ -184,9 +184,12 @@ iframe {
   border: 1px solid #c8c9c7;
 }
 
-.titulo_form {
-font-weight: 700;
+.titulo_form p {
+font-weight: 500;
 padding-bottom: 1rem;
+color: #434742;
+width: 100%;
+align-items: center;
 }
 
 .titulo_celda {
