@@ -68,7 +68,7 @@ h1, h3, h2, p, h4 {
  color:#434742;
  font-weight: 500;
  border-bottom: 2px solid #dd8623;
- padding-bottom: 20px;
+ padding-bottom: 30px;
  text-align: center;
 }
 
@@ -83,10 +83,10 @@ h1, h3, h2, p, h4 {
 .tours_todos {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 0;
+  margin: 3rem 10rem;
   justify-content: center;
  gap: 60px;
- 
+ width: 80%;
 }
 
 .tours_todos h2 {
@@ -101,7 +101,7 @@ h1, h3, h2, p, h4 {
 }
 
 .tours_todos img {
-width: 400px; height: 400px;
+width: 350px; height: 350px;
 border-radius: 40px;
 }
 
