@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Nunito", sans-serif; font-size: 20px ;
+  font-family: "Roboto", sans-serif; font-size: 20px ;
 }
 
 html {
@@ -14,7 +14,7 @@ body {
 }
 
 h1, h3, h2, p, h4 {
-    font-family: "Nunito", sans-serif; 
+    font-family: "Roboto", sans-serif; 
 }
 
 
@@ -39,7 +39,7 @@ h1, h3, h2, p, h4 {
   }
 
 .barra .nav-links li a {
-    font-size: 700; color: white;
+    font-size: 500; color: white;
     text-decoration: none;
 
   }
@@ -78,6 +78,7 @@ h1, h3, h2, p, h4 {
   font-size: 30px;
  color: #292b29;
  text-align: center;
+  font-weight: 300;
 }
 
 .tours_todos {
@@ -113,32 +114,31 @@ border-radius: 40px;
   overflow: hidden;
   width: 325px;
 }
- 
-.uno_uno .dos_dos .tres_tres .cuatro_cuatro .cinco_cinco .seis_seis {
+
+.tours {
+
+}
+
+.imagen_tour {
   transition: all .3s;
 }
 
-.uno_uno:hover {
+.imagen_tour:hover {
   filter: opacity(0.4);
+} 
+
+.boton-agregar {
+  background-color: #dd8623;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+ margin-left: 20px;
+ margin-top: 20px;
+ border-style: hidden;
 }
 
-.dos_dos:hover {
-  filter: opacity(0.4);
-}
-
-.tres_tres:hover {
-  filter: opacity(0.4);
-}
-.cuatro_cuatro:hover {
-  filter: opacity(0.4);
-}
-
-.cinco_cinco:hover {
-  filter: opacity(0.4);
-}
-
-.seis_seis:hover{
-  filter: opacity(0.4);
+.boton-agregar:hover {
+  background-color: #dfba90;
 }
 
 .video {
@@ -184,7 +184,7 @@ iframe {
   border: 1px solid #c8c9c7;
 }
 
-.titulo_form p {
+.titulo_form {
 font-weight: 500;
 padding-bottom: 1rem;
 color: #434742;
@@ -210,37 +210,22 @@ margin: 1rem 7rem;
 padding-bottom: 1rem;
 }
 
-@media (width < 1000px){
-  .opiniones {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .opiniones_todos h3 {
     font-size: .9rem;
 }
 
-.opinion_uno {
+.opinion {
   background-color: #ffffff;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: .5rem;
   border: 1px solid #dd8623;
   box-shadow: 10px 10px 20px #bec5bd;
 }
-.opinion_dos {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: .5rem;
-  border: 1px solid #dd8623;
-  box-shadow: 10px 10px 20px #bec5bd;
+
+.opinion p {
+  font-size: 0.8rem;
 }
-.opinion_tres {
- background-color: #ffffff; 
- padding: 2rem;
-  border-radius: .5rem;
-  border: 1px solid #dd8623;
-  box-shadow: 10px 10px 20px #bec5bd;
-}
+
 .opiniones .estrella i {
   font-size: .7rem;
   color: rgb(193, 146, 29);
@@ -256,6 +241,18 @@ padding-bottom: 1rem;
 color:#434742 ;
 font-size: 15px;
 padding-bottom:  0.7rem;
+}
+
+@media (width < 600px){
+  .opiniones {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1rem 3rem;
+    gap: 1rem;
+  }
+  .opiniones_todos h2 {
+    margin: 0 3rem;
+    
+  }
 }
 
 .container {
@@ -367,6 +364,10 @@ text-decoration:  underline;
  margin-top: 20px;
  border-style: hidden;
  
+}
+
+.boton:hover {
+  background-color: #dfba90;
 }
 
 .escribe {
