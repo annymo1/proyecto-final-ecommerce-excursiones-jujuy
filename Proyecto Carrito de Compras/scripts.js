@@ -66,18 +66,67 @@ contenedorTours.innerHTML = toursHTML;
 const botonesAgregar = document.querySelectorAll(".boton-agregar");
 console.log(botonesAgregar);
 
-const listaCarrito = document.querySelector("carrito ul");
+const listaCarrito = document.querySelector("#carrito ul");
 console.log(listaCarrito);
 
-const totalCarrito = document.querySelector("carrito p");
+const totalCarrito = document.querySelector("#carrito p");
 console.log(totalCarrito);
+
+const mensajePagarCarrito = document.getElementById("mensajeCarrito");
 
 let totalAPagar = 0;
 
 //agregamos el listener a cada boton
 
 for(let i= 0; i < botonesAgregar.length; i++){
-    
+    function agregarElemCarrito(){
+        console.log("click" + i);
+        const elementoLi = document.createElement("li");
+
+        elementoLi.innerText = `${tours[i].nombre} $${tours[i].precio}`;
+        console.log(elementoLi);
+
+        listaCarrito.appendChild(elementoLi);
+
+        totalAPagar += tours[i].precio;
+        
+        totalCarrito.innerText = "Total a pagar $" + totalAPagar;
+
+        mensajePagarCarrito.innerText = "";
+    }
+    console.log(botonesAgregar[i]);
+    botonesAgregar[i].addEventListener("click", agregarElemCarrito);
 } 
 
+
+const botonBorrar = document.querySelector("#boton-borrar");
+console.log(botonBorrar);
+
+
+
+function borrarCarrito(){
+    listaCarrito.innerHTML = "";
+    totalCarrito.innerHTML = "Total a Pagar $0";
+    console.log(totalCarrito);
+    totalAPagar = 0;
+    mensajePagarCarrito.innerText = ""
+}
+
+botonBorrar.addEventListener("click", borrarCarrito);
+
+const botonPagar = document.querySelector("#boton-pagar");
+
+function irAPagar(){
+    window.location.href = ""
+}
+
+botonPagar.addEventListener("click", irAPagar)
+
+function irAPagar(){
+    if (listaCarrito.innerText === ""){
+        mensajePagarCarrito.innerText = "No tienes reservas aún.";
+    } else {
+        window.location.href = "./reservas.html"
+    }
+}
 

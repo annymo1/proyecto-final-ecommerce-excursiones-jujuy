@@ -33,10 +33,13 @@
     </header>
     <main>
         <section class="titulo">
-            <h2>
+            <div>
+                <h2>
                 Excursiones en Jujuy
-            </h2>
-            <h1>ELEGÍ TU PRÓXIMA AVENTURA </h1>
+                </h2>
+                <h1>ELEGÍ TU PRÓXIMA AVENTURA </h1>
+            </div>
+            
         </section>
     </main>
     <section class="tours">
@@ -45,19 +48,16 @@
         </div>
     </section>
     <section id="carrito">
-        <h2>Carrito</h2>
-        <ul id="carrito ul">
-
-        </ul>
-        <p>Total a Pagar: $0</p>
-        <p id="mensaje"></p>
-        <div>
-            <input class="boton-borrar" type="button" value="Borrar carrito">
-        </div>
-        <div>
-            <input class="boton-pagar" type="button" value="Ir a pagar"> 
-        </div>
-        
+        <div class="carrito_contenido">
+            <h2>RESERVAS</h2>
+            <ul>
+               
+            </ul>
+            <p>Total a Pagar: $0</p>
+            <input id="boton-borrar" type="button" value="Borrar carrito">
+            <input id="boton-pagar" type="button" value="Ir a pagar"> 
+            <p id="mensajeCarrito"></p>
+        </div>    
     </section>
     <section> 
         <div>
@@ -76,21 +76,24 @@
             
             <div class="formulario">
                 <form action="https://formspree.io/f/manyebqz" method="POST">
-                    <p class="titulo_form">DEJANOS TU CONSULTA </p> 
-                    <label for="nombre" class="titulo_celda">Nombre
-                     <input name="nombre" value="" id="nombre" type="" class="celda">
-                    </label>
-                     <label for="telefono" class="titulo_celda">Numero de telefono
-                     <input name="telefono" value="" id="telefono" type=""class="celda">
-                    </label>
-                    
-                    <label for="email" class="titulo_celda">Correo electronico
-                     <input name="email" value="" id="email" type=""class="celda">
-                    </label>
-                    
-                    <p><textarea name="consulta" id="consulta" rows="4" cols="50" placeholder=" Escribe tu consulta" class="celda"></textarea></p>
-                    <input type="submit" value="Enviar" class="boton">
-                 
+                    <div>
+                        <p class="titulo_form">DEJANOS TU CONSULTA </p>
+                    </div>
+                    <div class="celdas">
+                        <label for="nombre" class="titulo_celda">Nombre
+                            <input name="nombre" value="" id="nombre" type="" class="celda">
+                           </label>
+                            <label for="telefono" class="titulo_celda">Numero de telefono
+                            <input name="telefono" value="" id="telefono" type=""class="celda">
+                           </label>
+                           
+                           <label for="email" class="titulo_celda">Correo electronico
+                            <input name="email" value="" id="email" type=""class="celda">
+                           </label>
+                           
+                           <p><textarea name="consulta" id="consulta" rows="4" cols="50" placeholder=" Escribe tu consulta" class="celda"></textarea></p>
+                           <input type="submit" value="Enviar" class="boton">
+                    </div>
                  </form>
             </div> 
 
@@ -99,7 +102,7 @@
         
     </section>
     <section class="opiniones_todos">
-        <h2>Nuestros viajeros opinan</h2>
+        <h2>NUESTROS VIAJEROS OPINAN</h2>
         <div class="opiniones">
             <div class="opinion">
                <h3>Lorena Gonzalez</h3>
