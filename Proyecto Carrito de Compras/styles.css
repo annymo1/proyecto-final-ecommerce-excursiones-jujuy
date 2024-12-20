@@ -156,7 +156,9 @@ padding-bottom: 1rem;
 }
 
 .carrito_contenido {
-  align-items: center;
+  justify-items: center;
+  padding-top: 2rem ;
+  padding-bottom: 3rem;
 }
 
 #boton-borrar {
