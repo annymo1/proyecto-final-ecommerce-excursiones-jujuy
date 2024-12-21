@@ -124,7 +124,7 @@ botonPagar.addEventListener("click", irAPagar)
 
 function irAPagar(){
     if (listaCarrito.innerText === ""){
-        mensajePagarCarrito.innerText = "No tienes reservas aún.";
+        mensajePagarCarrito.innerText = "No tienes reservas aún";
     } else {
         window.location.href = "./reservas.html"
     }
